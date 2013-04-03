@@ -17,7 +17,8 @@ log = (msg, complete) ->
 
 module.exports = class Bot
 
-  _motorKeys = ['a', 's', 'd', 'f']
+  _motorKeys: ['a', 's', 'd', 'f']
+  motorOutputs: {a: 0, s: 0, d: 0, f: 0}
 
   constructor: (@opts) ->
 
@@ -42,6 +43,7 @@ module.exports = class Bot
     speed = if opts.to? then opts.to else 10
     direction = if speed > 0 then 'f' else 'r'
     speed_char = String.fromCharCode 48 + Math.abs speed
+    @motorOutputs[motor] = speed
 
     @_serial.write("#{motor}#{direction}#{speed_char}\n") if !@opts.moch
     log("Sent: Set motor #{motor} to #{speed*10}% power.")

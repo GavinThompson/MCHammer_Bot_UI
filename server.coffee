@@ -30,6 +30,7 @@ motionControlSettings = { forward: 0, turn: 0, strafe: 0 }
 
 app = express()
 app.use express.bodyParser()
+app.enable("jsonp callback")
 
 app.get '/motors', (req, res) ->
   res.json bot.motorOutputs
@@ -37,10 +38,12 @@ app.get '/motors', (req, res) ->
 app.get '/motion-control', (req, res) ->
   res.json motionControlSettings
 
-app.post '/motion-control', (req, res) ->
+app.get '/motion-control/update', (req, res) ->
   motorOutputs = {}
-  data = req.body
+  data = req.query
   console.log data
+
+  motorOutputs = {}
 
   # Computing the motor outputs from the json per-axis inputs
   for axis, b of bindings
@@ -54,10 +57,7 @@ app.post '/motion-control', (req, res) ->
   # Updating the motors
   bot.set_motor motor, to: v for motor, v of motorOutputs
 
-  body = 'ACK'
-  res.setHeader('Content-Type', 'text/plain')
-  res.setHeader('Content-Length', body.length)
-  res.end(body)
+  res.jsonp("ACK");
 
 
 app.listen(8071)

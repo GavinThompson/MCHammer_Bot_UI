@@ -42,7 +42,7 @@ module.exports = class Bot
   set_motor: (motor, opts) ->
     speed = if opts.to? then opts.to else 10
     direction = if speed > 0 then 'f' else 'r'
-    speed_char = String.fromCharCode 48 + Math.abs speed
+    speed_char = String.fromCharCode 48 + Math.abs Math.round(speed)
     @motorOutputs[motor] = speed
 
     @_serial.write("#{motor}#{direction}#{speed_char}\n") if !@opts.moch

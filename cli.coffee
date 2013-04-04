@@ -1,7 +1,7 @@
 Bot = require './bot'
 
 bluetooth = true
-moch = false
+moch = ( process.argv.indexOf("--dry-run") != -1 );
 
 if bluetooth
   opts = 

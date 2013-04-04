@@ -51,6 +51,8 @@ Keyboard Controls:
 
 The above commands will start the server on "http://localhost:8071" and the two routes available are "http://localhost:8071/motors" and "http://localhost:8071/motion-control".
 
+## The API
+
 ### Motor Explanation --> "http://localhost:8071/motors"
 
 There are 4 motors labeled "a", "s", "d", "f" that have a range of values from -1 to +1.

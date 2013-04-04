@@ -96,7 +96,7 @@ A forward value of -1 represents the motor combination: {a: -1, s: -1, d: -1, f:
 
 http://people.mozilla.com/~tmielczarek/mouselock+gamepad/
 
-## Assignment
+## Your Assignment
 
 Your assignemnt is to use javascript, css, html, and optionally rails to build a user interface that connects to the Mc Hammer Bot using jquery's ajax functions to control the robot via the API outlined above.
 

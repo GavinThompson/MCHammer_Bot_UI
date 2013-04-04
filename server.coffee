@@ -19,7 +19,7 @@ bot = new Bot(opts)
 
 bot.connect()
 
-callibration = {a: 1, s: 1, d: 1, f: 1}
+# callibration = {a: 1, s: 1, d: 1, f: 1}
 
 bindings =
   forward: {a: +1, s: +1, d: +1, f: +1}

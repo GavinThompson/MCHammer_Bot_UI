@@ -100,6 +100,10 @@ http://people.mozilla.com/~tmielczarek/mouselock+gamepad/
 
 Your assignemnt is to use javascript, css, html, and optionally rails to build a user interface that connects to the Mc Hammer Bot using jquery's ajax functions to control the robot via the API outlined above.
 
+* You will get a chance to control the robot with your code but we will have to take turns. Sign up in the back of the class if you would like to use the robot. Robot control is first come, first serve.
+
+* You do **not** need the robot test out your user interface. The server has a --dry-run option (see above: "To Connect to a mockup / testing bot") which allows you to run it without connecting a robot. This mode is specifically made for testing. Keep an eye on the server's command line output and you will be able to see if it is responding to your requests and controlling the robot in a way that you expect.
+
 ### Due Date
 
 This assignment is due Monday afternoon.

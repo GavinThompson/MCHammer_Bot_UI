@@ -52,7 +52,9 @@ module.exports = class Bot
       log "Connected  ", true
       # Starts all the motors
       #log "Moving Forward"
-      #@set_motor "a", to: 7
+
+      # Stop all the motors on connection
+      @set_motor motor, to: 0 for motor in @_motorKeys
       #setTimeout (=> @set_motor 'a', to: 0), 3000
 
   _onData: (data) =>

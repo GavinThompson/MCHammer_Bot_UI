@@ -33,10 +33,10 @@ app.use express.bodyParser()
 app.enable("jsonp callback")
 
 app.get '/motors', (req, res) ->
-  res.json bot.motorOutputs
+  res.jsonp bot.motorOutputs
 
 app.get '/motion-control', (req, res) ->
-  res.json motionControlSettings
+  res.jsonp motionControlSettings
 
 app.get '/motion-control/update', (req, res) ->
   motorOutputs = {}

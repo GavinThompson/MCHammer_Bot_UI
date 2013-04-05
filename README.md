@@ -18,6 +18,9 @@ Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
 5. Install Node Package Modules
 ``npm install``
 
+6. Update your path
+``echo "PATH=/usr/local/share/npm/bin:$PATH" >> ~/.bash_profile;. ~/.bash_profile``
+
 ## Setting Up Bluetooth (Mac OSX)
 
 1. Click the bluetooth icon on your utilities navbar

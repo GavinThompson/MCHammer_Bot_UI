@@ -7,7 +7,7 @@ Playing with a robot to learn JavaScript, AJAX and a touch of Node.js
 ``brew install nodejs``
 
 2. Use the Node Packaged Modules (npm) command to install CoffeeScript
-``npm install coffee-script``
+``npm install -g coffee-script``
 
 3. Clone the repository
 ``git clone https://github.com/bitmakerlabs/mc_hammer_bot.git``

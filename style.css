@@ -1,0 +1,25 @@
+
+.center {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -60px auto 0 -60px;
+}
+
+.hammerbot {
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+	z-index: 3;
+}
+
+.bgdancer {
+	position: relative; 
+	top: -110px; 
+	right: 275px;
+	z-index: 1;
+}
+
+body {
+	background-color: #1ABC9C;
+}

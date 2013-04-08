@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<title>HAMMER TIME!</title>
+		<title>HAMMER QUEST!</title>
 		<script type="text/javascript" src="assets/apprise/apprise-1.5.full.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
@@ -11,25 +11,78 @@
 
 	</head>
 	<body>
-		<div class="center">
-		<img src="assets/media/images/mchammerbot.gif" class="hammerbot"/>
+
+		<div class="center groupdance">
+			<img src="assets/media/images/mchammerbot.gif" class="hammerbot"/>
+
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_1" class="bgdancer"/>
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_2" class="bgdancer"/>
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_3" class="bgdancer"/>
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_4" class="bgdancer"/>
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_5" class="bgdancer"/>
 			<img src="assets/media/images/hammerbgdancers.gif" id="hammer_bg_dancer_6" class="bgdancer"/>
-
 		</div>
 
-     	<!-- <div>
-     	 <audio controls autoplay height="100" width="100" class="audioplayer"> 
-     		<audio controls height="50" width="60" class="audioplayer">
+
+		<div id="hammer_time_text">
+			<h1>Hammer Time!</h1>
+		</div>
+
+		<div id="control_legend">
+			
+			<div class="legendtext">
+				<h3>HAMMERBOT CONTROLS</h3>
+			</div>
+			
+			<div id="strafebuttons">
+				<div class="key k5">
+					<p>Strafe L:</p>
+					<p>"Q"</p>
+				</div>					
+				<div class="key k6">
+					<p>Strafe R:</p>
+					<p>"E"</p>
+				</div>		
+			</div>
+			
+			<div id="topbuttons">
+				<div class="key filler">
+				</div>			
+				<div class="key k1">
+					<p>Forward:</p>
+					<p>"W"</p>
+				</div>			
+				<div class="key filler">
+				</div>
+			</div>
+			<div id="bottombuttons">
+				<div class="key k2">
+					<p>Left:</p>
+					<p>"A"</p>
+				</div>
+				<div class="key k3">
+					<p>Back:</p>
+					<p>"S"</p>
+				</div>
+				<div class="key k4">
+					<p>Right:</p>
+					<p>"D"</p>
+				</div>
+			</div>
+			<div id="spacebar_div">
+					<p>STOP:</p>
+					<p>"Spacebar"</p>	
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		</div>
+     	
+     	<div>
+     		<audio autoplay controls height="100" width="100" class="audioplayer"> 
 			<source src="assets/media/canttouchthischip.mp3" type="audio/mpeg">
 		</div>
-		 -->
-
+		 
 		
-</audio>
 	</body>
 </html>

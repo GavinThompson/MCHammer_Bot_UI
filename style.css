@@ -1,6 +1,12 @@
 
+body {
+	background-color: #1ABC9C;
+	font-family:Arial;
+}
+
 .center {
     position: absolute;
+    width: 800px;
 	left: 50%;
 	top: 50%;
 	margin: -60px auto 0 -60px;
@@ -15,11 +21,115 @@
 
 .bgdancer {
 	position: relative; 
-	top: -110px; 
-	right: 275px;
+	top: -160px; 
+	right: 355px;
 	z-index: 1;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-body {
-	background-color: #1ABC9C;
+h1 {
+	font-size: 5em;
+	color: #e74c3c;
 }
+
+#hammer_time_text {
+	position: absolute;
+	left: 35%;
+	bottom: 2%;
+}
+
+#control_legend {
+	position: absolute;
+	height: 300px;
+    width: 340px;
+	left: 80%;
+	bottom: 10%;
+}
+.legendtext {
+	position: relative;
+	left: 45px;
+}
+
+.key p:first-child{
+	margin-left: 5px;
+}
+
+.key p:last-child{
+	margin-left: 30px;
+}
+
+#spacebar_div p:first-child{
+	margin-left: 120px;
+}
+
+#spacebar_div p:last-child{
+	margin-left: 115px;
+}
+
+#topbuttons{
+	float:left;
+}
+#topbuttons .key{
+	float:left;
+}
+#bottombuttons{
+	clear:both;
+}
+#bottombuttons .key{
+	float:left;
+}
+/*SPACEBAR DIV*/
+#spacebar_div {
+	float:left;
+	height:90px;
+	width:305px;
+	margin:5px 5px;
+	
+	border-style:solid;
+	border-color:black;
+	border-radius:10px;
+	background: rgb(44, 62, 80); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(44, 62, 80, .2);
+}
+.clear {
+	clear:both;
+}
+
+.key {
+	height:90px;
+	width:90px;
+	margin:5px 5px;
+	
+	border-style:solid;
+	border-color:black;
+	border-radius:10px;
+	background: rgb(44, 62, 80); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(44, 62, 80, .2);
+}
+.key.filler {
+	border-style:solid;
+	border:#1ABC9C;
+	background:#1ABC9C;
+}
+.k1 {
+	margin-left: 12px
+}
+
+#strafebuttons{
+	float:left;
+	margin-left: 60px;
+}
+#strafebuttons .key{
+	float:left;
+}
+
+.k5,.k6 {
+	border-color: #e74c3c;
+	background: rgb(231, 76, 60); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(231, 76, 60, .5);
+}
+

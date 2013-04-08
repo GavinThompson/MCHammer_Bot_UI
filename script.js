@@ -89,7 +89,7 @@ $(document).ready(function(){
                                             case 32:
                                                 $.ajax(url, { dataType: "jsonp", data: {turn: 0, forward: 0} })
                                                 location.reload();
-                                                                                                                    
+                                         
                                             default:
                                                 break;
                                             }
@@ -115,6 +115,7 @@ $(document).ready(function(){
                                     }
                             });
                 break;
+                
             default:
                 break;
         }

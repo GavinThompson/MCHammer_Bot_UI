@@ -18,34 +18,34 @@ $(document).ready(function(){
             //left = a
             case 65:
                 $('.hammerbot').animate({left: "-=10px"}, 15);
-                console.log("Turning left..");
-                $.ajax(url, { dataType: "jsonp", data: {turn: -1} })
+                // console.log("Turning left..");
+                // $.ajax(url, { dataType: "jsonp", data: {turn: -1} })
                 $('.k2').css(btnKeydownCss);
                 break;
             //back =s
             case 83:
                 $('.hammerbot').animate({top: "+=10px"}, 15);
-                console.log("Going backwards..");
-                $.ajax(url, { dataType: "jsonp", data: {forward: -1} })
+                // console.log("Going backwards..");
+                // $.ajax(url, { dataType: "jsonp", data: {forward: -1} })
                 $('.k3').css(btnKeydownCss);
                 break;
             //forward =w
             case 87:
                 $('.hammerbot').animate({top:"-=10px"}, 15);
-                console.log("Going forward..");
-                $.ajax(url, { dataType: "jsonp", data: {forward: 1} })
+                // console.log("Going forward..");
+                // $.ajax(url, { dataType: "jsonp", data: {forward: 1} })
                 $('.k1').css(btnKeydownCss);
                 break;
             //right = d
             case 68:
                 $('.hammerbot').animate({left: "+=10px"}, 15);
-                console.log("Turning right..");
-                $.ajax(url, { dataType: "jsonp", data: {turn: 1} })
+                // console.log("Turning right..");
+                // $.ajax(url, { dataType: "jsonp", data: {turn: 1} })
                 $('.k4').css(btnKeydownCss); 
                 break;
             //Stop = space
             case 32:
-                $.ajax(url, { dataType: "jsonp", data: {turn: 0, forward: 0} })
+                // $.ajax(url, { dataType: "jsonp", data: {turn: 0, forward: 0} })
                 $('.center').css({"position": "absolute",
                                     "left": "50%",
                                     "top": "50%",
@@ -54,7 +54,7 @@ $(document).ready(function(){
                                                 "top": 0, 
                                                 "left": 0,
                                                 "z-index": 3});
-                console.log("Stopping..");
+                // console.log("Stopping..");
                 apprise('Stop?', {
                                 'verify':true, 
                                 'textYes':'Hammertime!', 
@@ -74,20 +74,20 @@ $(document).ready(function(){
                                         switch(parseInt(key.which,10)){
                                             case 69:
                                                 $('.groupdance').animate({left: "+=15px"}, 15);
-                                                console.log("Strafe right..");
-                                                $.ajax(url, { dataType: "jsonp", data: {strafe: 1} })
+                                                // console.log("Strafe right..");
+                                                // $.ajax(url, { dataType: "jsonp", data: {strafe: 1} })
                                                 $('.k6').css(btnKeydownCss);
                                                 break;
 
                                             case 81:
                                                 $('.groupdance').animate({left: "-=15px"}, 15);
-                                                console.log("Strafing left..");
-                                                $.ajax(url, { dataType: "jsonp", data: {strafe: -1} })
+                                                // console.log("Strafing left..");
+                                                // $.ajax(url, { dataType: "jsonp", data: {strafe: -1} })
                                                 $('.k5').css(btnKeydownCss);
                                                 break;
 
                                             case 32:
-                                                $.ajax(url, { dataType: "jsonp", data: {turn: 0, forward: 0} })
+                                                // $.ajax(url, { dataType: "jsonp", data: {turn: 0, forward: 0} })
                                                 location.reload();
                                          
                                             default:
@@ -97,14 +97,14 @@ $(document).ready(function(){
                                         $(document).keyup(function(key){
                                         switch(parseInt(key.which,10)){
                                             case 69:
-                                                console.log("Not strafe right..");
-                                                $.ajax(url, { dataType: "jsonp", data: {strafe: 0} })
+                                                // console.log("Not strafe right..");
+                                                // $.ajax(url, { dataType: "jsonp", data: {strafe: 0} })
                                                 $('.k6').css(btnKeyupstrafeCss);
                                                 break;
 
                                             case 81:
-                                                console.log("Not strafing left..");
-                                                $.ajax(url, { dataType: "jsonp", data: {strafe: 0} })
+                                                // console.log("Not strafing left..");
+                                                // $.ajax(url, { dataType: "jsonp", data: {strafe: 0} })
                                                 $('.k5').css(btnKeyupstrafeCss);
                                                 break;
                                             }
@@ -123,28 +123,30 @@ $(document).ready(function(){
     $(document).keyup(function(key){
         switch(parseInt(key.which,10)){
             case 65:
-                console.log("Not turning left..");
-                $.ajax(url, { dataType: "jsonp", data: {turn: 0} })
+                // console.log("Not turning left..");
+                // $.ajax(url, { dataType: "jsonp", data: {turn: 0} })
                 $('.k2').css(btnKeyupCss);
                 break;
             //back =s
             case 83:
-                console.log("Not going backwards..");
-                $.ajax(url, { dataType: "jsonp", data: {forward: 0} })
+                // console.log("Not going backwards..");
+                // $.ajax(url, { dataType: "jsonp", data: {forward: 0} })
                 $('.k3').css(btnKeyupCss);
                 break;
             //forward =w
             case 87:
-                console.log("Not going forward..");
-                $.ajax(url, { dataType: "jsonp", data: {forward: 0} })
+                // console.log("Not going forward..");
+                // $.ajax(url, { dataType: "jsonp", data: {forward: 0} })
                 $('.k1').css(btnKeyupCss);
                 break;
             //right = d
             case 68:
-                console.log("Not turning right..");
-                $.ajax(url, { dataType: "jsonp", data: {turn: 0} })
+                // console.log("Not turning right..");
+                // $.ajax(url, { dataType: "jsonp", data: {turn: 0} })
                 $('.k4').css(btnKeyupCss);
                 break;
         }
     });
 });
+
+// Ajax/Json originally for a server which controlled a robot mascot for http://www.bitmakerlabs.com known as MCHammerBot. 
